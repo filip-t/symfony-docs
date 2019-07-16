@@ -741,7 +741,7 @@ directory of FooBundle.
 The HttpKernel component provides a method called :method:`Symfony\\Component\\HttpKernel\\Kernel::locateResource`
 which can be used to transform logical paths into physical paths::
 
-    use Symfony\Component\HttpKernel\HttpKernel;
+    use Symfony\Component\HttpKernel\KernelInterface;
 
     // ...
     $kernel = new HttpKernel($dispatcher, $resolver);
